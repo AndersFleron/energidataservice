@@ -7,7 +7,3 @@ def valid_date(input):
     except ValueError:
         msg = f"Input {input} is not a valid date"
         raise argparse.ArgumentTypeError(msg)
-
-def valid_int(input):
-    if input < 1:
-        raise argparse.ArgumentTypeError("Order should be larger than 0")
